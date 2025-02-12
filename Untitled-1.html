@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome E-Commerce Store</title>
+  <style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+
+    /* Video background */
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Overlay on top of video */
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Audio controls styling */
+    .audio-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    .audio-container audio {
+      width: 300px;
+      border-radius: 5px;
+    }
+
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .product h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .product .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2ecc71;
+    }
+
+    /* Customer form styling */
+    .customer-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 40px auto;
+    }
+
+    .customer-form h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .customer-form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .customer-form input[type="submit"] {
+      background-color: #2ecc71;
+      color: #fff;
+      cursor: pointer;
+      font-size: 18px;
+      border: none;
+    }
+
+    .customer-form input[type="submit"]:hover {
+      background-color: #27ae60;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section with Video -->
+  <header>
+    <video autoplay loop muted>
+      <source src="C:\Users\HP\Desktop\demo website\100226-video-720.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="audio-container">
+      <audio controls>
+        <source src="C:\Users\HP\Desktop\demo website\file_example_MP3_1MG.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <div class="content">
+    <h1>Welcome to Our E-Commerce Store</h1>
+    <p>Browse our amazing collection of products below!</p>
+
+    <!-- Product Listings -->
+    <div class="products">
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <div class="price">$25.00</div>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>Description of Product 2</p>
+        <div class="price">$40.00</div>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <h2>Product 3</h2>
+        <p>Description of Product 3</p>
+        <div class="price">$35.00</div>
+      </div>
+    </div>
+
+    <!-- Customer Form -->
+    <div class="customer-form">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="email" placeholder="Enter your email" required>
+        <input type="tel" placeholder="Enter your contact number" required>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
